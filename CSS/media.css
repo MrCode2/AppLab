@@ -1,0 +1,226 @@
+/* breakpoints
+
+1. <576px
+2. ≥576px
+3. ≥768px
+4. ≥992px
+5. ≥1200px
+6. ≥1400px
+
+*/
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main.head_main .main_phone {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .app_features {
+        justify-content: space-around;
+    }
+    .app_features .telephone_slide {
+        margin-right: 0;
+    }
+    img[src="Images/tel_1.png"] {
+        height: 500px;
+    }
+    #loading .loading {
+        transform: scale(.8);
+    }
+    .header_nav div.burger {
+        display: flex;
+    }
+    .header .header_body .header_nav ul.nav_list {
+        display: none;
+    }
+    .phone_image {
+        height: 600px;
+    }
+    div.companies .companies_images img[class*='companies_image']:nth-child(5) {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 862px) {
+    div#loading .loading {
+        transform: scale(.7);
+    }
+    .head_main div.main_info {
+        width: 415px;
+    }
+    .head_main h1.main_head {
+        margin-top: 1rem;
+        font-size: 2rem;
+        line-height: 36px;
+    }
+    .head_main p.main_para {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .head_main div.main_buttons {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_features {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .app_features {
+        margin-top: 80px;
+        padding: 0px 10px;
+        display: block;
+    }
+    img[src="Images/tel_1.png"] {
+        display: none;
+    }
+    div#loading div.loading {
+        transform: scale(.3);
+    }
+    main.head_main {
+        padding: 0px 15px 15px;
+        justify-content: space-between;
+    }
+    img.phone_image {
+        height: 400px;
+    }
+    main.head_main div.main_info {
+        width: 370px;
+    }
+    .header + .head_main h1.main_head {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .head_main .top_reiting {
+        width: 300px;
+    }
+    .head_main .top_reiting span {
+        font-size: 14px;
+    }
+    main.head_main p.main_para {
+        font-size: 13px;
+    }
+    main.head_main .main_buttons .watch_button {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    div.companies {
+        background-color: #f5f7fa;
+        height: 63px;
+        width: 80%;
+        margin: 50px auto 0;
+    }
+    div.companies .companies_images {
+        flex-direction: column;
+    }
+    div.companies .companies_images img[class*='companies_image'] {
+        margin-top: 25px;
+        margin-right: 0;
+    }
+    div.companies .companies_images img[class*='companies_image']:nth-child(odd) {
+        align-self: flex-start;
+        margin-left: 25px;
+    }
+    div.companies .companies_images img[class*='companies_image']:nth-child(even) {
+        align-self: flex-end;
+        margin-right: 25px;
+    }
+    div.companies .companies_head {
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 10px;
+        text-align: left;
+        padding-top: 17px;
+
+    }
+    div.companies {
+        position: relative;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    div.companies.active {
+        height: 530px;
+    }
+    div.companies.active::after {
+        transform: rotate(calc(0.25turn + 45deg));
+    }
+    div.companies::after {
+        transition: 0.5s;
+        content: '';
+        position: absolute;
+        top: 21px;
+        right: 38px;
+        width: 19px;
+        height: 19px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url(../Images/Icons/plus.svg);
+    }
+
+}
+
+@media (max-width: 767px) {
+    .head {
+        background-image: linear-gradient(to bottom, rgba(35, 229, 255, 0.11), transparent);
+    }
+}
+
+@media (max-width: 576px) {
+    .feature_heading .feature_head {
+        font-size: 24px;
+        line-height: 39px;
+    }
+    .feature_heading .feature_para {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 11px;
+    }
+    .Features h3 {
+        font-size: 16px;
+        line-height: 48px;
+    }
+    .Features p {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .about_features {
+        width: 308px;
+    }
+    .header + main.head_main div.main_info {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+    img.phone_image {
+        display: none;
+    }
+    div.companies h3.companies_head {
+        font-size: 15px;
+    }
+    .main_1 div.companies::after {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 355px) {
+    main.head_main .main_buttons button.watch_button {
+        font-weight: 400;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}
